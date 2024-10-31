@@ -1,9 +1,13 @@
 ## What is the purpose of the doctype declaration?
+```html
 <!DOCTYPE> : tells the browser what version of HTML the page is using.
+```
 
 ## What is the HTML element?
+```html
 <!DOCTYPE html>: The root element of an HTML document.
 Contains <head> and <body> elements.
+```
 
 ## What is the purpose of the head element?
 Contains meta-information about the document, such as the <title>, character encoding <meta charset="UTF-8">, and links to external resources <link rel="stylesheet" href="styles.css">.
@@ -85,4 +89,8 @@ SVG: best for logos and vector graphics
 GIF: best for simple animations
 
 ## How to create a table?
+```html
 <table>: Defines a table.
+<tr>: Defines a row in a table.
+<td>: Defines a cell in a table.
+```
