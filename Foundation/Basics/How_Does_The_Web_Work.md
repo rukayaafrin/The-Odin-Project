@@ -1,5 +1,5 @@
 ## What is a web server?
-- deliverys web pages to users' devices upon request
+- delivers web pages to users' devices upon request
 - handles HTTP requests from clients(browsers) and serves requested file
 
 ## What is a network?
