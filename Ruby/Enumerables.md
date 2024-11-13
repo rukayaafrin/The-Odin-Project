@@ -129,3 +129,75 @@ end
 #=> {"Bob's Dirty Burger Shack"=>2, "St. Mark's Bistro"=>1}
 
 ```
+
+### Predicate Enumerables
+
+#### `include?`
+
+```ruby
+numbers = [5, 6, 7, 8]
+
+numbers.include?(6)
+#=> true
+
+numbers.include?(3)
+#=> false
+```
+
+
+#### `any?`
+
+```ruby
+numbers = [21, 42, 303, 499, 550, 811]
+
+numbers.any? { |number| number > 500 }
+#=> true
+
+numbers.any? { |number| number < 20 }
+#=> false
+
+```
+
+
+
+#### `all?`
+
+```ruby
+fruits = ["apple", "banana", "strawberry", "pineapple"]
+
+fruits.all? { |fruit| fruit.length > 3 }
+#=> true
+
+fruits.all? { |fruit| fruit.length > 6 }
+#=> false
+
+```
+
+
+#### `none?`
+
+```ruby
+fruits = ["apple", "banana", "strawberry", "pineapple"]
+
+fruits.none? { |fruit| fruit.length > 10 }
+#=> true
+
+fruits.none? { |fruit| fruit.length > 6 }
+#=> false
+
+```
+
+#### `one?`
+
+Exactly one element returns `true` with `one?` method
+
+```ruby
+["a"].one?
+# true
+
+[].one?
+# false
+
+[nil].one?
+# false
+```
