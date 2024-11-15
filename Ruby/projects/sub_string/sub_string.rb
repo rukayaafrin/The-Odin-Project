@@ -9,3 +9,17 @@ Implement a method #substrings that takes a word as the first argument and then 
   => { "down" => 1, "go" => 1, "going" => 1, "how" => 2, "howdy" => 1, "it" => 2, "i" => 3, "own" => 1, "part" => 1, "partner" => 1, "sit" => 1 }
 
 =end
+
+def sub_string(substring,dictionary)
+  words_array = substring.gsub(/[[:punct:]]/,'').downcase.split(" ")
+  word_hash = Hash.new(0) 
+  for word in words_array
+    for dict in dictionary
+      if word.include?(dict)
+        word_hash[dict] += 1  
+      end
+    end
+  end
+  word_hash
+end
+
